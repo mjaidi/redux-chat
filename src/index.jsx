@@ -49,7 +49,7 @@ const initialState = {
 };
 
 // Apply Middlewares
-const middlewares = applyMiddleware(logger, reduxPromise);
+const middlewares = applyMiddleware(reduxPromise, logger);
 
 
 // render an instance of the component in the DOM

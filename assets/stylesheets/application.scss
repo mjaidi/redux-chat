@@ -1,7 +1,67 @@
 body {
   font-family: Helvetica;
 }
+
+.image {
+  padding: 15px;
+  position: fixed;
+  width: 50px;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: #555;
+  width: 100px;
+  img {
+    height: 60px;
+  }
+}
+
 .app {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  display: flex;
+  position: relative;
+  left: 100px;
+  width: 90%;
+}
+
+.channel-list {
+  flex: 0 0 20%;
+  padding: 15px;
+  background: #ccc;
+  height: 100vh;
+  .channel{
+    cursor: pointer;
+    &:hover {
+      color: #777;
+    }
+  }
+}
+
+.message-list {
+  flex: 0 0 80%;
+  padding: 15px;
+  .message-content {
+    height: 80vh;
+    overflow: scroll;
+  }
+  .message-form {
+    display: flex;
+    input {
+      flex: 0 0 90%;
+    }
+    button {
+      flex: 0 0 10%;
+    }
+  }
+
+}
+.message {
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+    .message-time {
+      font-size: 14px;
+      font-weight: lighter;
+      font-style: italic;
+    }
+  }
 }
